@@ -4,7 +4,7 @@ import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast';
 
 const App = () => {
-  const [socket] = useState(io(':5000'));
+  const [socket] = useState(io('https://ace-backend-eta.vercel.app/'));
   const [room, setRoom] = useState('');
   const [message, setMessage] = useState('');
   const [chat, setChat] = useState([]);
