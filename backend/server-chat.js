@@ -143,15 +143,15 @@ function getCurrentDateTime() {
     return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}${formattedOffset}`;
   }
 //deploy
- const __dirname1=path.resolve();
- if(process.env.NODE_ENV==='production'){
-  app.use(express.static(path.join(__dirname1,'/frontend/dist')))
+//  const __dirname1=path.resolve();
+//  if(process.env.NODE_ENV==='production'){
+//   app.use(express.static(path.join(__dirname1,'/frontend/dist')))
 
 
-  app.get('*',(req,res)=>{
-    res.sendFile(path.resolve(__dirname1,"frontend","dist","index.html"))
-  })
- }
+//   app.get('*',(req,res)=>{
+//     res.sendFile(path.resolve(__dirname1,"frontend","dist","index.html"))
+//   })
+//  }
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
