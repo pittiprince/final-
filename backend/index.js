@@ -17,7 +17,10 @@ const io = new socketIo(server, {
 app.use(express.static('public'));
 
 // Use CORS middleware
-app.use(cors());
+app.use(cors({
+  origin: "https://ace-frontend-snowy.vercel.app", // Use your frontend URL
+  methods: ["GET", "POST"]
+}));
 
 // Middleware to parse JSON
 app.use(express.json());
