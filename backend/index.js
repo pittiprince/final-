@@ -9,7 +9,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new socketIo(server, {
     cors: {
-        origin: "*"
+        origin: "https://ace-frontend-snowy.vercel.app/"
     }
 });
 
