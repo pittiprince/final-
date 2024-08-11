@@ -8,7 +8,7 @@ const NewsCard = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await fetch('http://localhost:5000/news');
+        const response = await fetch('https://ace-backend-eta.vercel.app/news');
         const data = await response.json();
         console.log(data); // For debugging: check the structure of the fetched data
 
