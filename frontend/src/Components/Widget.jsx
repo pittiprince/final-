@@ -11,7 +11,7 @@ const WeatherWidget = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/weather', {
+        const res = await axios.get('https://ace-backend-eta.vercel.app/weather', {
           params: {
             lat: lat,
             lng: lon
