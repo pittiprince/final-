@@ -2,7 +2,7 @@ import React from 'react';
 import { auth, signInWithPopup, GoogleAuthProvider } from '../config/firebase';
 import { Toaster, toast } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
-import RotatingGlobe from './Globe'; // Ensure this path is correct
+
 
 const SignupPage = () => {
   const navigate = useNavigate();
@@ -34,7 +34,7 @@ const SignupPage = () => {
       {/* Left Side: Globe Animation */}
       <div className="w-full md:w-1/2 flex items-center justify-center bg-gray-800 p-8 relative">
         <div className="absolute inset-0 z-0 h-full w-full">
-          <RotatingGlobe />
+          
         </div>
         <h1 className="text-5xl sm:text-7xl font-extrabold text-white text-center relative z-10">
           ACE
