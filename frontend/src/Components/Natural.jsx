@@ -12,7 +12,7 @@ const NaturalDisasterWidget = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/disasters', {
+        const res = await axios.get('https://ace-backend-eta.vercel.app/disasters', {
           params: {
             lat: lat,
             lng: lon,
