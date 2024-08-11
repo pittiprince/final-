@@ -85,7 +85,7 @@ app.get('/disasters', async (req, res) => {
 app.get('/news', async (req, res) => {
     const date = getCurrentDateTime();
     try {
-        const data = await fetch(`https://gnews.io/api/v4/search?q=natural%20disasters&lang=en&country=in&max=52&apikey=959052fd913812543f2e90d1c39d6383&${date}`);
+        const data = await fetch(`https://gnews.io/api/v4/search?q=natural%20disasters&lang=en&country=in&max=52&apikey=fd9dac55d551988b26b10a2b7aff05a7&${date}`);
         const json = await data.json();
         res.status(200).json(json);
     } catch (error) {
