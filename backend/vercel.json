@@ -2,8 +2,7 @@
     "version":2,
     "builds":[{"src":"./index.js","use":"@vercel/node"}],
     "routes":[{"src":"/(.*)","dest":"/"}]
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 34d437dc779fa9b787ad645ed6884a0c3a4db271
+
+
