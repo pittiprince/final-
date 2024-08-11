@@ -3,8 +3,7 @@ import io from 'socket.io-client';
 import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast';
 
-// Replace this URL with your backend URL
-const SOCKET_SERVER_URL = 'https://ace-backend-eta.vercel.app/';
+const SOCKET_SERVER_URL = 'https://ace-backend-eta.vercel.app/'; // Your backend URL
 
 const App = () => {
   const [socket] = useState(io(SOCKET_SERVER_URL));
